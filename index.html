@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IRONWORK</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <nav class="navbar  navbar-expand-lg navbar-dark bg-dark py-0  ">
+        <div class="container   ">
+            <div class="img-container">
+                <img src="/images/Logo.png" alt="" class="rounded-5  " width="200" height="200">
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto  fs-5    ">
+                    <li class="nav-item "><a class="nav-link" href="index.html">Anasayfa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Hakkımızda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">İletişim</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid bg-dark  py-1 px-1">
+        <!-- Burası en alta gelen konteyner bu konteynere yanlara yasladık, 
+            dark siyahlığını verdik ve py-5 ile de 
+            container e dikey eksende bir yerde oturması için 
+            yukarı ve aşağısından padding ekledik 
+            burdaki 5 bootstrap ölçüsüne göre bir padding değeri  -->
+
+        <div class="container px-0  ">
+            <!--yukarda açtığımız konteyner içine bir konteyner daha koyduk burdaki amaç 
+                    bu konteynerın ıcınde olusturacagımız row ve collerı daha güzel göstermek bıze sımdı bır adet row
+                rowlarında altına iki adet col lazım colun bırı yazılar ıcın dıgerıde resım  ıcın  -->
+
+            <div class="row gx-5 align-items-center justify-content-center">
+                <!--ikisi alt alta yazı ve yazıların altında ıse ıkı ayrı yanyana  
+                    buton var bu yazıları ve butonları ortalamak ıcın 
+                    yani ana container row u yani satır ve aralarında bootstrap boslugunu gx-5 ile bir bakıma yerini iyice belirledik   -->
+                <div class="col-lg-8 col-xl-7 col-xxl-6">
+                    <!-- artık ilk col classımızı tanımlıyoruz ve once pixsellere göre sutunumuzu nasıl konumlayacağımızı bu class ıcerısıne yazdık -->
+
+                    <div class="my-5 text-center text-xl-start">
+                        <!-- sonra col class ının ıcıne bır class daha yazdık bu class ımızın ıcerıgı yazılardan olusacak 
+                        ve bu yazılaırn konumunu ve yanlardan da ortalaması ıcın yanı sağ ve soldan 5 bustrap bırımınden bosluk ekledık margin olusturduk-->
+
+                        <h1 class="display-5 fw-bolder text-white mb-2">Demirin Gücü, Çelikten Gelir IRONWORK
+                        </h1>
+                        <!-- once bır baslık ve bu baslık baslık ıcın normalden daha buyuk font boyutu,kalınlık ve 
+                            beyaz renk ekledık alttanda 2 bootstrap birimi boşluk ekledik ki altına yazacağımız paragrafla iç içe giriş yapmasın..  -->
+                        <p class="lead fw-normal text-white-50 mb-4">Güçlü demir ve çelik ürünleriyle sektörde öncüyüz.
+                            Kalite ve güvenilirlikten ödün vermeyen hizmet anlayışımızla, her projeye güç katıyoruz.
+                        </p>
+                        <!-- buradkı p elementının ıcıne tanımladıgımız class p elementinin yukardaki yazı tipini ve özelliklerini inherit ederken değişmesine sebep oluyor
+                        burada yazılan class ın ılk ozellıgı normal bir vurgu sonrasında gelen yazının saydamlığı normalde yazı siyah ama bu özelliği sayesinde saydamlık kazanıyor -->
+                        <div
+                            class="d-grid gap-3 d-sm-flex justify-content-sm-center  justify-content-lg-center justify-content-xl-start ">
+                            <!-- şimdi burda colun ıcıne tekrar bır class tanımlıyoruz bu class bızım butonlarımızı yan yana koyucaz bunun ıcın bıze d-grid sistemi lazım
+                            ve classımızı once display-grid kısaltması d-grid olarak tanımladık sonrasında aralarındakı boslugu gap-3 ile verdik d-sm-flex kucuk ekranda yatay olmasını sağladık
+                            ve küçük ekranda bu ıkısını ortaladık l bedende de ortaladık xl bedende ise start yani sola yasladık-->
+                            <a class="btn btn-danger  btn-lg px-4 me-sm-3" href="#icerik">Haddane</a>
+                            <a class="btn btn-outline-light btn-lg px-4" href="#dahasi">Daha Fazlsı mı ?</a>
+
+                            <!-- ve ıcıne sonunda butonlarımızı da yerlestırdık ve bunların tıklanınca nereye gıdeceklerını de daha sonrasında degıstırebılırız. -->
+                        </div>
+                    </div>
+                </div>
+                <!-- evet 1. col yanı sutunumuzun ıslemlerı bıttı sımdı ıcınde resım olan ıkıncı sutunumuza gecelım -->
+                <div class="col-lg-4 col-xl-5 col-xxl-6 d-none d-xl-block "><img class="img-fluid rounded-3 my-5"
+                        src="/images/demir-celik-600x400.jpg" alt="...">
+                    <!--  l bedende 4 css bırımı xl bedende 5 css birimine  göre yer kaplıcak
+                        xxl bedende de 6 css birimine göre yer kaplaycak cunku bırıncı col yanı sutunumuz lg bedende 8 xl bedende 7 xxl beden de de 6 olmak uzere kı 12 ye tamamladık
+                    sonra burada site xl bedenin altına dustugu zaman kaybolacak bu kadar ozelliğin hepsi aslında sutunun ıcıne koyacağımız resmimiz içindi
+                şimdi resmimizi fluid ile kaplattırdık ve kenarlarını 3 bootstrap bırımı ıle yuvarladık aynı radius gibi ve my-5 ıle de yukarı ve aşağı yonde dikey dolguları da ekledık -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- şimdi section içerik bölümüne geçelim  aslında yukarıda tanımladıgımız konteyner yapısına benzer ıc ıce konteyner tanımlayarak baslayabılırız-->
+
+    <section id="icerik">
+        <div class="container-fluid px-3 py-3 mb-0  ">
+            <!-- buradaki en alttaki container yukardaki konteyner ile benzer alt yapıda -->
+            <div class="container px-3 py-3 mb-0 ">
+                <!-- ıcıne ekledıgımız containerde yukardaki ile benzer yapıda  -->
+                <div class="row gx-5">
+                    <!-- sol taraftaki ilk sutun -->
+                    <div class="col-md-12 col-lg-4  ">
+
+                        <div class="my-2 align-baseline">
+                            <p class="fs-2  fw-bolder mb-0">Bizimle Çalışmanın Avantajları Nelerdir?</p>
+                        </div>
+                    </div>
+                    <!-- Sağ Taraftaki Sütunlar için Ana Sütun -->
+                    <div class="col-md-12 col-lg-8">
+                        <div class="row gx-5  ">
+                            <!-- Sağ Taraf üst -->
+                            <div class="col-md-6  ">
+                                <div class="card text-bg-white no-border mb-3 my-2 " style="max-width: 20rem;">
+                                    <div class="card-header bg-white no-border-bottom"><i class="bi bi-shield-shaded "></i>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Kalite Güvencesi</h5>
+                                        <p class="card-text">Endüstri standartlarını aşan üretim süreçleri ve titiz
+                                            kalite kontrol yöntemleriyle
+                                            müşterilerimize güvenilir ve dayanıklı ürünler sunuyoruz.</p>
+                                    </div>
+                                </div>
+                                <div class="card text-bg-white no-border mb-3 my-2" style="max-width: 18rem;">
+                                    <div class="card-header bg-white no-border-bottom"> <i class="bi bi-shield-shaded"></i>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Esneklik ve Özelleştirme:</h5>
+                                        <p class="card-text">Ürünlerimizde kaliteyi ön planda tutuyoruz. Endüstri
+                                            standartlarını aşan üretim süreçleri ve titiz kalite kontrol yöntemleriyle
+                                            müşterilerimize güvenilir ve dayanıklı ürünler sunuyoruz.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Sağ Taraf alt -->
+                            <div class="col-md-6  ">
+                                <div class="card text-bg-white no-border mb-3 my-2" style="max-width: 18rem;">
+                                    <div class="card-header bg-white no-border-bottom"><i class="bi bi-shield-shaded"></i>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Tecrübe ve Uzmanlık:</h5>
+                                        <p class="card-text">Sektördeki uzun yıllara dayanan deneyimimiz ve uzman
+                                            ekibimizle, müşterilerimize en iyi hizmeti sunmaya kararlıyız. </p>
+                                    </div>
+                                </div>
+                                <div class="card text-bg-white no-border mb-3 my-2" style="max-width: 18rem;">
+                                    <div class="card-header bg-white no-border-bottom"><i class="bi bi-shield-shaded"></i>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Müşteri Odaklı Hizmet</h5>
+                                        <p class="card-text">Müşteri memnuniyeti bizim için önceliktir. Sorunsuz
+                                            iletişim, zamanında teslimat ve satış sonrası destek gibi konularda
+                                            müşterilerimize en iyi hizmeti sağlamak için çalışıyoruz. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mt-2 ">
+        <div class="container-fluid bg-light py-3 px-3">
+            <div class="container text-center">
+                <div class="row justify-content-md-center ">
+                    <div class="col-md-auto mx-5 my-5 ">
+                        <p class="fs-5 ">
+                            <i>Demir çelik endüstrisi, yapı malzemeleri, otomotiv, enerji ve daha birçok sektör için
+                                temel bir bileşen sağlar. <br> Güçlü ve dayanıklı demir çelik ürünleri, modern
+                                endüstrinin
+                                ihtiyaçlarını karşılamak için temel bir gereksinimdir.</i>
+                        </p>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center pb-4 ">
+                        <img class="rounded-circle me-3 w-25  " src="/images/40x40.avif" alt="...">
+                        <div class="fw-bold my-0 ">
+                            Tamer UZUN
+                            <span class="fw-bold text-primary mx-1">/</span>
+                            CEO, BLACKSMITH
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="py-5">
+            <div class="container px-5 my-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-8 col-xl-6">
+                        <div class="text-center">
+                            <h2 class="fw-bolder">Demir Çelik Güçlü Gelecek</h2>
+                            <p class="lead fw-normal text-muted mb-5">Demir Çelik Endüstrisi, Yenilikçi Üretim
+                                Metotları ve Sürdürülebilirlik Odaklı Yatırımlarla Dönüşüyor: Sektördeki Son Gelişmeler"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gx-5">
+                    <div class="col-lg-4 mb-5">
+                        <div class="card h-100 shadow border-0">
+                            <img class="card-img-top" src="/images/demir-celik.jpg" alt="...">
+                            <div class="card-body p-4">
+                                <div class="badge bg-primary bg-gradient rounded-pill mb-2">Güncel</div>
+                                <a class="text-decoration-none link-dark stretched-link" href="#!">
+                                    <h5 class="card-title mb-3">Yenilikler ve Dönüşüm</h5>
+                                </a>
+                                <p class="card-text mb-0">Sektördeki yenilikler, sürdürülebilirlik trendleri, teknolojik
+                                    gelişmeler ve pazar dinamikleri gibi konuları ele alarak,  endüstride
+                                    nelerin değiştiğini ve gelecekte nelerin beklenildiğini Sn. Üstün anlatıyor.</p>
+                            </div>
+                            <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                <div class="d-flex align-items-end justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle me-3 w-25 "
+                                            src="/images/murat.jpeg" alt="...">
+                                        <div class="small">
+                                            <div class="fw-bold">Murat Üstün</div>
+                                            <div class="text-muted">Nisan 01, 2024</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-5">
+                        <div class="card h-100 shadow border-0">
+                            <img class="card-img-top" src="/images/ilan-40168-c8qca9tdddo2r4r28i2qa7zawtfmk41m.jpg" alt="...">
+                            <div class="card-body p-4">
+                                <div class="badge bg-primary bg-gradient rounded-pill mb-2">Yerli Üretim</div>
+                                <a class="text-decoration-none link-dark stretched-link" href="#!">
+                                    <h5 class="card-title mb-3">Sürdürülebilir Üretim Yöntemleri</h5>
+                                </a>
+                                <p class="card-text mb-0">Demir ve çelik üretiminde sürdürülebilirlik
+                                    odaklı yöntemleri inceleyebilirsiniz. Geri dönüşüm süreçleri, enerji verimliliği,
+                                    atık yönetimi ve çevresel etkiler gibi konuları ele alarak, sektörde
+                                    sürdürülebilirlik uygulamalarının önemini vurgulayabilirsiniz</p>
+                            </div>
+                            <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                <div class="d-flex align-items-end justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle me-3 w-25 "
+                                            src="/images/kadir.jpeg" alt="...">
+                                        <div class="small">
+                                            <div class="fw-bold">Kadir Yaralı</div>
+                                            <div class="text-muted">Mart,14,2023 </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-5">
+                        <div class="card h-100 shadow border-0">
+                            <img class="card-img-top" src="/images/istanbul-kursun-hurdasi-alimlari.jpg" alt="...">
+                            <div class="card-body p-4">
+                                <div class="badge bg-primary bg-gradient rounded-pill mb-2">Yatırım</div>
+                                <a class="text-decoration-none link-dark stretched-link" href="#!">
+                                    <h5 class="card-title mb-3">Demir Çelik Sektöründe Son Gelişmeler ve Yatırımlar</h5>
+                                </a>
+                                <p class="card-text mb-0">Bu haber yazısında, demir ve çelik endüstrisindeki son
+                                    gelişmeleri ve yapılan yatırımları raporlayabilirsiniz. Yeni tesisler, teknolojik
+                                    yenilikler, pazar trendleri ve sektördeki önde gelen şirketlerin faaliyetleri gibi
+                                    konuları ele alarak, okuyuculara sektörde neler olup bittiğini aktarabilirsiniz.</p>
+                            </div>
+                            <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                <div class="d-flex align-items-end justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle me-3 w-25 "
+                                            src="/images/serdar.jpg" alt="...">
+                                        <div class="small">
+                                            <div class="fw-bold">Serdar Toprak</div>
+                                            <div class="text-muted">Şubar,23 2023</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <aside class="bg-dark  bg-gradient rounded-3 p-4 p-sm-5 mt-5">
+                    <div
+                        class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start">
+                        <div class="mb-4 mb-xl-0">
+                            <div class="fs-4  fw-bold text-white">En Son Güncellemelerden Haberdar Olun!</div>
+                            <div class="text-white-50">Endüstri haberleri ve trendlerini takip edin.</div>
+                        </div>
+                        <div class="ms-xl-4">
+                            <div class="input-group mb-2">
+                                <input class="form-control" type="text" placeholder="Email adresiniz.."
+                                    aria-label="Email adresiniz.." aria-describedby="button-newsletter">
+                                <button class="btn btn-outline-danger " id="button-newsletter" type="button">
+                                    Giriş Yap</button>
+                            </div>
+                            <div class="small text-white-50">Gizliliğe önem veriyoruz ve verilerinizi asla paylaşmayacağız.
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+        </div>
+    </section>
+    <footer class="bg-dark py-4 mt-auto">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <!-- buradaki flex-sm-row terimi, küçük ekran boyutunda öğelerin yatay olarak esnek bir şekilde sıralanmasını ifade ediyor -->
+                <div class="col-auto">
+                    <div class="small m-0 text-white">Recep TEKİN © Your Website 2024</div>
+                </div>
+                <div id="dahasi" class="col-auto">
+                    <a class="link-light small" href="index.html">Anasayda</a>
+                    <span class="text-white mx-1">·</span>
+                    <a class="link-light small" href="about.html">Hakkımızda</a>
+                    <span class="text-white mx-1">·</span>
+                    <a class="link-light small" href="contact.html">İletişim</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

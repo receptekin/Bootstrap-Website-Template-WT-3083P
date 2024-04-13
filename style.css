@@ -1,0 +1,21 @@
+
+.no-border {
+    border: none !important;
+}
+
+.no-border-bottom {
+    border-bottom: none !important;
+}
+.bi-shield-shaded,
+.bi-envelope,
+.bi-chat-dots,
+.bi-people,
+.bi-question-circle,
+.bi-telephone {
+    color: #ff0000; 
+    font-size:35px;
+}
+
+
+
+
